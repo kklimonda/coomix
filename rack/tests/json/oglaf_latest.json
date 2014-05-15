@@ -1,0 +1,9 @@
+{
+  "pages": {
+    "http://oglaf.com/": {
+      "images": {
+        "http://media.oglaf.com/comic/ahoy.jpg": "ahoy.jpg"
+      }
+    }
+  }
+}

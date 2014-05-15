@@ -1,0 +1,10 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "D:\\devel\\code\\personal\\coomix",
+            "folder_exclude_patterns": ["__pycache__"]
+		}
+	]
+}

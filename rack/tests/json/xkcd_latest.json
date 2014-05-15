@@ -1,0 +1,9 @@
+{
+  "pages": {
+    "http://xkcd.com/1365/": {
+      "images": {
+        "http://imgs.xkcd.com/comics/inflation.png": "1365-inflation.png"
+      }
+    }
+  }
+}

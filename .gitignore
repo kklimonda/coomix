@@ -1,0 +1,11 @@
+*.pyc
+
+# coverage stuff
+/.coverage
+/htmlcov/
+
+# development stuff
+/development.db
+/.idea/
+/media/
+/venv/

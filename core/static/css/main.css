@@ -1,0 +1,31 @@
+.strips {
+    list-style: none;
+    text-align: center;
+}
+
+.strip {
+    display: inline;
+}
+
+.strip:after {
+    content: "\A";
+    white-space: pre;
+}
+
+.strip-wrapped {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #a9a9a9;
+    border-radius: 3px;
+}
+
+.strip > img {
+    display: block;
+    margin: 0 auto;
+}
+
+.strip .alt {
+    margin: 5px 0 -5px 0;
+    color: #d3d3d3;
+}
