@@ -6,7 +6,6 @@ import os
 import shutil
 
 from celery import Celery
-from dosagelib.director import ComicGetter
 from django.conf import settings
 from subprocess import Popen, PIPE
 
