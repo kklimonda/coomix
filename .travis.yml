@@ -4,6 +4,6 @@ python:
 install: "pip install -r requirements.txt --use-mirrors"
 before_script:
     - pip install coverage python-coveralls
-script: coverage run manage.py test core rack
+script: coverage run --omit="/home/travis/virtualenv/*" manage.py test core rack
 after_success:
     - coveralls
