@@ -170,21 +170,3 @@ class Strip(models.Model):
 
     def save_extra_data(self, json):
         self.quirk.save_extra_strip_data(self.comic, self, json)
-
-    def get_template_path(self):
-        return self.quirk.template_path
-
-    def get_template_context(self):
-        context = {
-            'strip': self
-        }
-        if self.quirk:
-            context.update(
-                self.quirk.get_extra_context(self.comic, self)
-            )
-        return context
-
-    def render_template(self):
-        template = self.get_template_path()
-        context = self.get_template_context()
-        return render_to_string(template, context)

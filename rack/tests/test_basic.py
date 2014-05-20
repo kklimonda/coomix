@@ -64,12 +64,3 @@ class StripTestCase(TestCase):
         Strip.objects.get_or_create_with_images(self.comic, self.latest_dilbert)
         self.assertEqual(Strip.objects.count(), 1)
 
-    def test_strip_get_template_path(self):
-        strip = StripFactory.create(comic=self.xkcd)
-        self.assertEqual(
-            strip.get_template_path(), "rack/comics/xkcd.html"
-        )
-        strip = StripFactory.create(comic=self.comic)
-        self.assertEqual(
-            strip.get_template_path(), "rack/comics/generic.html"
-        )
