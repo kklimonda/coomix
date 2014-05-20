@@ -1,5 +1,6 @@
 /// <reference path="jquery.d.ts" />
 /// <reference path="handlebars.d.ts" />
+
 var StripImage = (function () {
     function StripImage(image) {
         this.src = image.image;
@@ -93,8 +94,8 @@ var ComicsManager = (function () {
     return ComicsManager;
 })();
 
-(function ($) {
+(function ($, endpoint) {
     $(document).ready(function () {
-        var manager = new ComicsManager($("#strips-list"), "http://89-67-184-153.dynamic.chello.pl:10000/");
+        var manager = new ComicsManager($("#strips-list"), endpoint);
     });
-})(jQuery);
+})(jQuery, SERVER_ENDPOINT);
